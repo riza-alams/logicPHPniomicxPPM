@@ -1,0 +1,11 @@
+<?php
+include './cli/index.php';
+$command = readline('input your version (cli) :');
+if($command == 'cli'){
+    $cli = readline('input your soal (logic)');
+    new Cli($cli);
+
+}else{
+    echo 'please select cli';
+}
+
